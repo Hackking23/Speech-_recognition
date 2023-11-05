@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech To Text</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Transcribe Speech To Text</h1>
+    <div class="container">
+        <div id="microphone" onclick="toggleRecording()">
+            <i class="fa fa-microphone"></i>
+            <img src="mic.svg" alt="">
+        </div>
+        <p id="recording-text">Recording...</p>
+        <audio id="audio-player" controls style="display: none;"></audio>
+
+        <div class="textbox">
+            <h3>Your Transcribed Text:</h3>
+            <textarea id="box"></textarea>
+        </div>
+    </div>
+</body>
+</html>
